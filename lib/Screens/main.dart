@@ -1,3 +1,4 @@
+import 'package:flutte_youtube_8hrs_practice/Screens/MyRoutes.dart';
 import 'package:flutter/material.dart';
 import 'home_page.dart';
 import 'second_screen.dart';
@@ -16,9 +17,10 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(primarySwatch: Colors.blueGrey),
       darkTheme: ThemeData(brightness: Brightness.dark),
       routes: {
-        "/": (context) => Login_Page(),
-        "/secondscreen": (context) => Login_Page()
-        // "/home": (context) => HomePage()
+        "/" : (context) => Login_Page(),
+          MyRoutes.homeRoute: (context) => HomePage(),
+        // MyRoutes.loginRoute: (context) => Login_Page(),
+
       },
     );
   }
